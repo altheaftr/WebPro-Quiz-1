@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Althea Rahmania Fitri | Personal Website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="logo" href="#home">Thea</a>
+      <button id="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu">
+        <li><a class="link" href="#home">Home</a></li>
+        <li><a class="link" href="#profile">Profile</a></li>
+        <li><a class="link" href="#hometown">Hometown</a></li>
+        <li><a class="link" href="#food">Local Food</a></li>
+        <li><a class="link" href="#tourism">Tourist Places</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section id="home">
+  <div class="wrap hero">
+    <div>
+      <h1>Hi, I'm Althea. More known as Thea</h1>
+      <p class="lead">Informatics student at Institut Teknologi Sepuluh Nopember. Born in Malang, raised in Surabaya. Two cities, two very different kinds of food, and this site is my guide to both.</p>
+      <p class="typing" aria-live="polite"><span id="typed"></span><span class="caret"></span></p>
+      <a class="btn" href="#profile">About me</a>
+      <a class="btn alt" href="#hometown">Explore my hometowns</a>
+    </div>
+    <div class="portrait">
+      <img src="images/foto 2026.jpg" alt="Portrait of Althea Rahmania Fitri" onerror="this.remove()">
+      <span>Althea Rahmania Fitri</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section id="profile">
+  <div class="wrap">
+    <h2>Profile</h2>
+    <div class="facts">
+      <div class="fact"><b>Name</b><span>Althea Rahmania Fitri</span></div>
+      <div class="fact"><b>Age</b><span>18 years old</span></div>
+      <div class="fact"><b>Date of birth</b><span>20 October 2007</span></div>
+      <div class="fact"><b>Place of birth</b><span>Malang</span></div>
+    </div>
+
+    <h3 class="sub">Education</h3>
+    <ol class="timeline">
+      <li>
+        <b>Bachelor/Undergraduate</b>
+        <span>Institut Teknologi Sepuluh Nopember (ITS), Informatics (2025 - Now)</span>
+        <a href="https://share.google/IG9z5pZVL4NgIX1db" target="_blank" rel="noopener">Learn more</a>
+      </li>
+      <li>
+        <b>High school</b>
+        <span>SMA Negeri 16 Surabaya (2022 - 2025)</span>
+        <a href="https://share.google/3Gi7eykFOMN02JZMu" target="_blank" rel="noopener">Learn more</a>
+      </li>
+      <li>
+        <b>Middle school</b>
+        <span>SMP Negeri 1 Surabaya (2019 - 2022)</span>
+        <a href="https://share.google/fe8Q0i42pKt1ZwdJn" target="_blank" rel="noopener">Learn more</a>
+      </li>
+      <li>
+        <b>Primary school</b>
+        <span>SDN Kalisari 1 Surabaya (2018 - 2019)</span>
+        <a href="https://share.google/6sXSPVMxfiCufn77J" target="_blank" rel="noopener">Learn more</a>
+      </li>
+      <li>
+        <b>Primary school</b>
+        <span>CLG Primary School</span>
+        <a href="https://share.google/CnQD038AtHihoQETu" target="_blank" rel="noopener">Learn more</a>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- HOMETOWN -->
+<section id="hometown">
+  <div class="wrap">
+    <h2>Hometown</h2>
+    <p>I was born in Malang and grew up in Surabaya, so I call both cities home.</p>
+    <div class="tabset">
+      <div class="tabs" role="tablist" aria-label="Choose a city">
+        <button type="button" role="tab" aria-selected="true" data-panel="ht-surabaya">Surabaya</button>
+        <button type="button" role="tab" aria-selected="false" data-panel="ht-malang">Malang</button>
+      </div>
+
+      <div class="panel" id="ht-surabaya">
+        <figure class="city-photo" data-emoji="🌆">
+          <img src="images/surabaya.jpg" alt="Surabaya city" onerror="this.remove()">
+        </figure>
+        <h3>Surabaya</h3>
+        <p>Surabaya is a port city on the Indonesian island of Java. A vibrant, sprawling metropolis, it mixes modern skyscrapers with canals and buildings from its Dutch colonial past. It has a thriving Chinatown and an Arab Quarter whose Ampel Mosque dates to the 15th century. The Tugu Pahlawan (Heroes Monument) honors the independence battles waged in Surabaya's streets in 1945.</p>
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps?q=Surabaya&output=embed" title="Map of Surabaya" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <a class="btn alt" href="https://share.google/zQQVkYjJTeeFZT7cy" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+
+      <div class="panel hide" id="ht-malang">
+        <figure class="city-photo" data-emoji="🏔️">
+          <img src="images/malang.jpg" alt="Malang city" onerror="this.remove()">
+        </figure>
+        <h3>Malang</h3>
+        <p>Malang is a city in East Java, Indonesia. Prized by the Dutch for its mild highland climate, the city retains much of its colonial architecture. The Balai Kota building blends Indonesian and Dutch styles, and grand mansions line the main boulevard, Jalan Besar Ijen. North of the city, the Buddhist-Hindu Singosari Temple ruins are a remnant of a medieval kingdom. To the east is Mt. Bromo, a volcano with hiking trails.</p>
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps?q=Malang&output=embed" title="Map of Malang" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <a class="btn alt" href="https://share.google/oOqTSa3n1DVAGz65E" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL FOOD -->
+<section id="food">
+  <div class="wrap">
+    <h2>Local Food</h2>
+    <div class="tabset">
+      <div class="tabs" role="tablist" aria-label="Choose a city">
+        <button type="button" role="tab" aria-selected="true" data-panel="fd-surabaya">Surabaya</button>
+        <button type="button" role="tab" aria-selected="false" data-panel="fd-malang">Malang</button>
+      </div>
+
+      <div class="panel" id="fd-surabaya">
+        <div class="grid">
+          <article class="card">
+            <div class="thumb" data-emoji="🥗"><img src="images/rujak-cingur.jpg" alt="Rujak cingur" onerror="this.remove()"><span>Rujak Cingur</span></div>
+            <div class="body"><h3>Rujak Cingur</h3>
+            <p>A salad of vegetables, fruit, and sliced cow snout, tossed in a dark, savory shrimp-paste (petis) sauce.</p></div>
+          </article>
+          <article class="card">
+            <div class="thumb" data-emoji="🍲"><img src="images/rawon.jpg" alt="Rawon" onerror="this.remove()"><span>Rawon</span></div>
+            <div class="body"><h3>Rawon</h3>
+            <p>A black beef soup colored by keluak nuts, served with rice, bean sprouts, salted egg, and sambal.</p></div>
+          </article>
+          <article class="card">
+            <div class="thumb" data-emoji="🍛"><img src="images/lontong-balap.jpg" alt="Lontong balap" onerror="this.remove()"><span>Lontong Balap</span></div>
+            <div class="body"><h3>Lontong Balap</h3>
+            <p>Rice cake with fried tofu, bean sprouts, and lentho, topped with sweet soy sauce, fried shallots, and sambal.</p></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="panel hide" id="fd-malang">
+        <div class="grid">
+          <article class="card">
+            <div class="thumb" data-emoji="🥟"><img src="images/bakwan.jpg" alt="Bakwan Malang" onerror="this.remove()"><span>Bakwan</span></div>
+            <div class="body"><h3>Bakwan</h3>
+            <p>Fried dumplings served in a light broth with meatballs, noodles, and vegetables.</p></div>
+          </article>
+          <article class="card">
+            <div class="thumb" data-emoji="🍜"><img src="images/bakso.jpg" alt="Bakso" onerror="this.remove()"><span>Bakso</span></div>
+            <div class="body"><h3>Bakso</h3>
+            <p>Beef meatballs in a hot broth with noodles, tofu, and fried wonton. Malang is famous for it.</p></div>
+          </article>
+          <article class="card">
+            <div class="thumb" data-emoji="🥘"><img src="images/orem-orem.jpg" alt="Orem-orem" onerror="this.remove()"><span>Orem-orem</span></div>
+            <div class="body"><h3>Orem-orem</h3>
+            <p>Tempeh stir-fried in a coconut-milk gravy, usually eaten with rice cake or rice and vegetables.</p></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOURIST PLACES -->
+<section id="tourism">
+  <div class="wrap">
+    <h2>Tourist Places</h2>
+    <div class="tabset">
+      <div class="tabs" role="tablist" aria-label="Choose a city">
+        <button type="button" role="tab" aria-selected="true" data-panel="tp-surabaya">Surabaya</button>
+        <button type="button" role="tab" aria-selected="false" data-panel="tp-malang">Malang</button>
+      </div>
+
+      <div class="panel" id="tp-surabaya">
+        <div class="grid">
+          <article class="card">
+            <div class="thumb" data-emoji="🚢"><img src="images/monkasel.jpg" alt="Monumen Kapal Selam" onerror="this.remove()"><span>Monumen Kapal Selam</span></div>
+            <div class="body"><h3>Monumen Kapal Selam</h3>
+            <p>A real submarine turned into a museum. You can walk through its narrow rooms.</p>
+            <a href="https://share.google/1BYl9we5ir8azW7Pk" target="_blank" rel="noopener">View on Google</a></div>
+          </article>
+          <article class="card">
+            <div class="thumb" data-emoji="🏛️"><img src="images/tugu-pahlawan.jpg" alt="Tugu Pahlawan" onerror="this.remove()"><span>Tugu Pahlawan</span></div>
+            <div class="body"><h3>Tugu Pahlawan</h3>
+            <p>The Heroes Monument, honoring the 1945 battle for independence fought in Surabaya.</p>
+            <a href="https://share.google/GzkP2D6SttOIbcz6Q" target="_blank" rel="noopener">View on Google</a></div>
+          </article>
+          <article class="card">
+            <div class="thumb" data-emoji="🌉"><img src="images/sby-north-quay.jpg" alt="Surabaya North Quay" onerror="this.remove()"><span>Surabaya North Quay</span></div>
+            <div class="body"><h3>Surabaya North Quay</h3>
+            <p>A waterfront spot by the harbor for walking, photos, and watching the ships.</p>
+            <a href="https://share.google/jFonnmvqdVMN3Dy98" target="_blank" rel="noopener">View on Google</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="panel hide" id="tp-malang">
+        <div class="grid">
+          <article class="card">
+            <div class="thumb" data-emoji="🌊"><img src="images/hawai.jpg" alt="Hawai Waterpark" onerror="this.remove()"><span>Hawai Waterpark</span></div>
+            <div class="body"><h3>Hawai Waterpark</h3>
+            <p>A water park with slides and pools, a good pick for families and friends.</p>
+            <a href="https://share.google/PtESdPS5Asnvarq9u" target="_blank" rel="noopener">View on Google</a></div>
+          </article>
+          <article class="card">
+            <div class="thumb" data-emoji="🏘️"><img src="images/kayutangan.jpg" alt="Kajoetangan Heritage Village" onerror="this.remove()"><span>Kajoetangan Heritage</span></div>
+            <div class="body"><h3>Kajoetangan Heritage Village</h3>
+            <p>A colorful old neighborhood with Dutch-era houses, cafes, and photo corners.</p>
+            <a href="https://share.google/tLClVzMSVdDcce7gL" target="_blank" rel="noopener">View on Google</a></div>
+          </article>
+          <article class="card">
+            <div class="thumb" data-emoji="🏖️️"><img src="images/pantai.jpg" alt="Pantai Teluk Asmara" onerror="this.remove()"><span>Pantai Teluk Asmara</span></div>
+            <div class="body"><h3>Pantai Teluk Asmara</h3>
+            <p>A beach on Malang's southern coast with white sand and calm, clear water.</p>
+            <a href="https://share.google/vxXQ8NkA4XJrORzMi" target="_blank" rel="noopener">View on Google</a></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="year"></span> Althea Rahmania Fitri. Made with HTML, CSS, and JavaScript.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
